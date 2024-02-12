@@ -5,7 +5,7 @@ import React from 'react';
 
 function App() {
 
-  const noDialog = ["", "Er du sikker? ", "Er du helt sikker?", "Er du helt sikker på at du er sikker?", "Er du helt sikker på at du er helt sikker på at du er sikker?", "Er du helt sikker på at du er helt sikker på at du er helt sikker på at du er sikker?", "Hvis du trykker nei en gang til, så får du muligens en runde juling 🤬", "Ok, du ba om det, en god dose juling bestilt😌", "Åja så det var ikke nok? Du vil ha mer? 2 julinger comin up 🐱‍👤", "Okay vet du hva, du har nå mistet retten til å si nei."]
+  const noDialog = ["", "Er du sikker?", "Er du helt sikker? 🤨", "Er du helt sikker på at du er sikker?🤦‍♂️", "Er du helt sikker på at du er helt sikker på at du er sikker?😠", "Er du helt sikker på at du er helt sikker på at du er helt sikker på at du er sikker? 😡", "Hvis du trykker nei en gang til, så får du muligens en runde juling 🤬", "Ok, du ba om det, en god dose juling bestilt😌", "Åja så det var ikke nok? Du vil ha mer? 2 julinger comin up 🐱‍👤", "Okay vet du hva, du har nå mistet retten til å si nei."]
   const [noCounter, setNoCounter] = React.useState(0);
   const [onYesClick, setOnYesClick] = React.useState(false);
 
@@ -35,7 +35,7 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <h2 style={{ marginBottom: "50px" }}>Til hu søte jenta fra byen midt i Norge:</h2>
+        <h3 style={{ marginBottom: "50px" }}>Til hu søte fra byen midt i Norge:</h3>
         <h4>{noDialog[noCounter]}</h4>
         {noCounter >= noDialog.length && <h4>Sånn, da har du mistet nei-privilegiene dine. Da er det bare å trykke på det eneste riktige svaret 🥰</h4>}
         <h2>Vil du være min valentin?</h2>
