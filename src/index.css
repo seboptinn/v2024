@@ -2,10 +2,28 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --primary: #646cff;
+  --secondary: #058d54;
+  --background: #e8dff5;
+  --background-light: #fce1e4;
+  --background-dark: #fcf4dd;
+  --background-darker: #ddedea;
+  --background-darkest: #daeaf6;
+  --text: #fefefe;
+  --text-light: #888;
+  --text-dark: #222;
+  --text-darker: #111;
+  --text-darkest: #000;
+  --color-primary: #e8dff5;
+  --color-pink: #fce1e4;
+  --color-yellow: #fcf4dd;
+  --color-green: #ddedea;
+  --color5-blue: #daeaf6;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-dark);
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -54,7 +72,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -65,4 +83,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

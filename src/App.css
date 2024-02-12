@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+/*
+#e8dff5 //
+ #fce1e4 //
+  #fcf4dd // 
+  #ddedea // 
+  #daeaf6
+  */
+/* :root {
+  --primary: #646cff;
+  --secondary: #61dafb;
+  --background: #e8dff5;
+  --background-light: #fce1e4;
+  --background-dark: #fcf4dd;
+  --background-darker: #ddedea;
+  --background-darkest: #daeaf6;
+  --text: #fefefe;
+  --text-light: #888;
+  --text-dark: #222;
+  --text-darker: #111;
+  --text-darkest: #000;
+  --color-primary: #e8dff5;
+  --color-pink: #fce1e4;
+  --color-yellow: #fcf4dd;
+  --color-green: #ddedea;
+  --color5-blue: #daeaf6;
+  p {
+    color: var(--text);
+  }
+} */
