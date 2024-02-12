@@ -33,15 +33,15 @@ function App() {
 
 
   return (
-    <div>
+    <div className='container'>
       <ThemeProvider theme={theme}>
         <h3 style={{ marginBottom: "50px" }}>Til hu søte fra byen midt i Norge:</h3>
         <h4>{noDialog[noCounter]}</h4>
         {noCounter >= noDialog.length && <h4>Sånn, da har du mistet nei-privilegiene dine. Da er det bare å trykke på det eneste riktige svaret 🥰</h4>}
         <h2>Vil du være min valentin?</h2>
-        <div className='content'>
-          <Button variant="contained" color='primary' onClick={() => setOnYesClick(true)}>Ja 🥰</Button>
+        <div className='knapper'>
           <Button className='hover-run' variant="contained" color='error' onClick={() => setNoCounter(noCounter + 1)} disabled={noCounter >= noDialog.length}>Nei🤡</Button>
+          <Button variant="contained" color='primary' onClick={() => setOnYesClick(true)}>Ja 🥰</Button>
         </div>
 
       </ThemeProvider>
