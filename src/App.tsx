@@ -15,9 +15,11 @@ function App() {
   const [showSadCat, setShowSadCat] = React.useState(false);
   const width = 270;
   const height = 270;
+  const screenWidth = window.innerWidth;
   const [buttonStyle, setButtonStyle] = React.useState({});
 
   const handleMouseOver = () => {
+    if (screenWidth < 768) return;
     const newStyle = {
       position: 'absolute',
       left: `${Math.random() * 70}vw`,
