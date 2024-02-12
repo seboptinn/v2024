@@ -8,6 +8,7 @@
 .knapper {
   display: flex;
   justify-content: space-around;
+  margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
